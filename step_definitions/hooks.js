@@ -50,10 +50,10 @@ Before(async function(scenario) {
 
   scope.page = await scope.browser.newPage()
 
-  // await scope.page.setViewport({
-  //   width: constants.width,
-  //   height: constants.height
-  // })
+  await scope.page.setViewport({
+    width: constants.width,
+    height: constants.height
+  })
 
 })
 

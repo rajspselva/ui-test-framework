@@ -8,7 +8,7 @@ async function elementVisible (page, selector) {
 }
 
 async function wait(page) {
-  return page.waitFor(constants.pageTimeout)
+  return page.waitFor(constants.pageTimeout * 1000)
 }
 
 module.exports = {
