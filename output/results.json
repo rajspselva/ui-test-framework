@@ -151,7 +151,7 @@
         "attemptNumber": 1,
         "name": "Launch Google Application",
         "result": {
-          "duration": 11807000000,
+          "duration": 7139000000,
           "status": "passed"
         },
         "sourceLocation": {
@@ -163,19 +163,19 @@
         {
           "attachments": [],
           "result": {
-            "duration": 120000000,
+            "duration": 75000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions/hooks.js",
-            "line": 50
+            "line": 46
           },
           "keyword": "Before"
         },
         {
           "attachments": [],
           "result": {
-            "duration": 11687000000,
+            "duration": 7063000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -193,12 +193,12 @@
         {
           "attachments": [],
           "result": {
-            "duration": 0,
+            "duration": 1000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions/hooks.js",
-            "line": 64
+            "line": 60
           },
           "keyword": "After"
         }
@@ -209,7 +209,7 @@
         "attemptNumber": 1,
         "name": "Launch Google Application",
         "result": {
-          "duration": 5681000000,
+          "duration": 4068000000,
           "status": "passed"
         },
         "sourceLocation": {
@@ -221,19 +221,19 @@
         {
           "attachments": [],
           "result": {
-            "duration": 100000000,
+            "duration": 107000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions/hooks.js",
-            "line": 50
+            "line": 46
           },
           "keyword": "Before"
         },
         {
           "attachments": [],
           "result": {
-            "duration": 5581000000,
+            "duration": 3961000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -256,7 +256,7 @@
           },
           "actionLocation": {
             "uri": "step_definitions/hooks.js",
-            "line": 64
+            "line": 60
           },
           "keyword": "After"
         }

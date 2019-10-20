@@ -10,6 +10,7 @@ Given('I lauch Google Applciation', async function () {
     })
 
     await wait.elementVisible(scope.page, '[name="&lpos=sitenavdefault&lid=sitenav_main-logo"]')
+    console.log("element visible")
   }
   catch(error) {
     console.log(error)

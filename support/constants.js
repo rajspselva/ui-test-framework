@@ -3,5 +3,9 @@ let config = require('konfig')({
 })
 
 module.exports = {
-  baseUrl: config.properties.baseUrl
+  baseUrl: config.properties.baseUrl,
+  width: config.properties.width,
+  height: config.properties.height,
+  headlessMode: config.properties.headlessMode,
+  pageTimeout: config.properties.pageTimeout
 }
