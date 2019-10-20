@@ -1,0 +1,9 @@
+{
+  "default": {
+    "baseUrl": "https://www.espncricinfo.com/",
+    "width": 1680,
+    "height": 1080,
+    "headlessMode": false,
+    "pageTimeout": 60000
+  }
+}
