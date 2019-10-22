@@ -151,7 +151,7 @@
         "attemptNumber": 1,
         "name": "Launch Google Application",
         "result": {
-          "duration": 7139000000,
+          "duration": 3700000000,
           "status": "passed"
         },
         "sourceLocation": {
@@ -163,7 +163,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 75000000,
+            "duration": 126000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -175,7 +175,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 7063000000,
+            "duration": 3574000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -193,7 +193,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 1000000,
+            "duration": 0,
             "status": "passed"
           },
           "actionLocation": {
@@ -209,7 +209,7 @@
         "attemptNumber": 1,
         "name": "Launch Google Application",
         "result": {
-          "duration": 4068000000,
+          "duration": 16480000000,
           "status": "passed"
         },
         "sourceLocation": {
@@ -221,7 +221,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 107000000,
+            "duration": 148000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -233,7 +233,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 3961000000,
+            "duration": 16332000000,
             "status": "passed"
           },
           "actionLocation": {
