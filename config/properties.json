@@ -1,6 +1,6 @@
 {
   "default": {
-    "baseUrl": "https://www.espncricinfo.com/",
+    "baseUrl": "http://fine.stage.ourdream.city/",
     "width": 1680,
     "height": 1080,
     "headlessMode": false,

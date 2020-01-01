@@ -1,6 +1,6 @@
 module.export = {
-  driver: undefined,
-  browser: undefined,
-  page: undefined,
-  folder: undefined
+  driver: null,
+  browser: null,
+  page: null,
+  folder: null
 }

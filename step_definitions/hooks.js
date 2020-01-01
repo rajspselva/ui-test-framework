@@ -8,15 +8,21 @@ const {
 
 const scope = require('../support/scope')
 const constants = require('../support/constants')
+const puppeteer = require('puppeteer')
+
 
 BeforeAll(async function() {
   console.log("Before starting all test suite....");
-
-  const puppeteer = require('puppeteer')
   scope.driver = puppeteer
   let env = process.env.NODE_ENV
-
   console.log('Node Environment :', env);
+  setDefaultTimeout(constants.pageTimeout * 1000)
+})
+
+Before(async function(scenario) {
+  console.log("Before starting test....");
+
+  const platform = process.platform === 'darwin' ? 'MAC OSX' : process.platform;
 
   let launchProperties = {
     headless: constants.headlessMode,
@@ -33,36 +39,32 @@ BeforeAll(async function() {
     ]
   }
 
-  setDefaultTimeout(constants.pageTimeout * 1000)
-
   console.log('lauch browser instance .....................')
   scope.browser = await puppeteer.launch(launchProperties)
   scope.folder = '/'
 
 
-})
-
-
-Before(async function(scenario) {
-  console.log("Before starting test....");
-
-  const platform = process.platform === 'darwin' ? 'MAC OSX' : process.platform;
+  if (scope.page != null) {
+    scope.page.close();
+  }
 
   scope.page = await scope.browser.newPage()
+  await scope.page.setCacheEnabled(false);
 
   await scope.page.setViewport({
     width: constants.width,
     height: constants.height
   })
-
 })
 
 After(async function() {
   console.log("After the test test....");
+  await scope.browser.close();
 })
 
 AfterAll(async function() {
   console.log("After execution of all tests....");
-
-  await scope.browser.close()
+  if (scope.browser != null) {
+     await scope.browser.close()
+  }
 })
