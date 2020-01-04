@@ -76,6 +76,24 @@
                 },
                 "keyword": "Then ",
                 "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 9,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the Dashboard icon"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 10,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the Dashboard Profile Name"
               }
             ]
           },
@@ -85,14 +103,14 @@
               {
                 "type": "Tag",
                 "location": {
-                  "line": 10,
+                  "line": 12,
                   "column": 3
                 },
                 "name": "@st"
               }
             ],
             "location": {
-              "line": 11,
+              "line": 13,
               "column": 3
             },
             "keyword": "Scenario",
@@ -101,7 +119,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 12,
+                  "line": 14,
                   "column": 5
                 },
                 "keyword": "Given ",
@@ -110,7 +128,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 13,
+                  "line": 15,
                   "column": 5
                 },
                 "keyword": "Then ",
@@ -119,7 +137,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 14,
+                  "line": 16,
                   "column": 5
                 },
                 "keyword": "And ",
@@ -128,7 +146,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 15,
+                  "line": 17,
                   "column": 5
                 },
                 "keyword": "And ",
@@ -137,7 +155,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 16,
+                  "line": 18,
                   "column": 5
                 },
                 "keyword": "When ",
@@ -146,7 +164,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 17,
+                  "line": 19,
                   "column": 5
                 },
                 "keyword": "Then ",
@@ -160,14 +178,14 @@
               {
                 "type": "Tag",
                 "location": {
-                  "line": 19,
+                  "line": 21,
                   "column": 3
                 },
                 "name": "@st"
               }
             ],
             "location": {
-              "line": 20,
+              "line": 22,
               "column": 3
             },
             "keyword": "Scenario",
@@ -176,7 +194,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 21,
+                  "line": 23,
                   "column": 5
                 },
                 "keyword": "Given ",
@@ -185,7 +203,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 22,
+                  "line": 24,
                   "column": 5
                 },
                 "keyword": "Then ",
@@ -194,7 +212,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 23,
+                  "line": 25,
                   "column": 5
                 },
                 "keyword": "And ",
@@ -203,7 +221,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 24,
+                  "line": 26,
                   "column": 5
                 },
                 "keyword": "And ",
@@ -212,7 +230,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 25,
+                  "line": 27,
                   "column": 5
                 },
                 "keyword": "When ",
@@ -221,7 +239,7 @@
               {
                 "type": "Step",
                 "location": {
-                  "line": 26,
+                  "line": 28,
                   "column": 5
                 },
                 "keyword": "Then ",
@@ -232,7 +250,7 @@
         ]
       },
       "comments": [],
-      "uri": "features/lauch.feature"
+      "uri": "features\\lauch.feature"
     }
   ],
   "pickles": [
@@ -304,16 +322,36 @@
               "column": 10
             }
           ]
+        },
+        {
+          "text": "I should see the Dashboard icon",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 9,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see the Dashboard Profile Name",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 10,
+              "column": 10
+            }
+          ]
         }
       ],
-      "uri": "features/lauch.feature"
+      "uri": "features\\lauch.feature"
     },
     {
       "tags": [
         {
           "name": "@st",
           "location": {
-            "line": 10,
+            "line": 12,
             "column": 3
           }
         }
@@ -322,7 +360,7 @@
       "language": "en",
       "locations": [
         {
-          "line": 11,
+          "line": 13,
           "column": 3
         }
       ],
@@ -332,7 +370,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 12,
+              "line": 14,
               "column": 11
             }
           ]
@@ -342,7 +380,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 13,
+              "line": 15,
               "column": 10
             }
           ]
@@ -352,7 +390,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 14,
+              "line": 16,
               "column": 9
             }
           ]
@@ -362,7 +400,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 15,
+              "line": 17,
               "column": 9
             }
           ]
@@ -372,7 +410,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 16,
+              "line": 18,
               "column": 10
             }
           ]
@@ -382,20 +420,20 @@
           "arguments": [],
           "locations": [
             {
-              "line": 17,
+              "line": 19,
               "column": 10
             }
           ]
         }
       ],
-      "uri": "features/lauch.feature"
+      "uri": "features\\lauch.feature"
     },
     {
       "tags": [
         {
           "name": "@st",
           "location": {
-            "line": 19,
+            "line": 21,
             "column": 3
           }
         }
@@ -404,7 +442,7 @@
       "language": "en",
       "locations": [
         {
-          "line": 20,
+          "line": 22,
           "column": 3
         }
       ],
@@ -414,7 +452,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 21,
+              "line": 23,
               "column": 11
             }
           ]
@@ -424,7 +462,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 22,
+              "line": 24,
               "column": 10
             }
           ]
@@ -434,7 +472,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 23,
+              "line": 25,
               "column": 9
             }
           ]
@@ -444,7 +482,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 24,
+              "line": 26,
               "column": 9
             }
           ]
@@ -454,7 +492,7 @@
           "arguments": [],
           "locations": [
             {
-              "line": 25,
+              "line": 27,
               "column": 10
             }
           ]
@@ -464,13 +502,13 @@
           "arguments": [],
           "locations": [
             {
-              "line": 26,
+              "line": 28,
               "column": 10
             }
           ]
         }
       ],
-      "uri": "features/lauch.feature"
+      "uri": "features\\lauch.feature"
     }
   ],
   "testCaseAttempts": [
@@ -479,11 +517,11 @@
         "attemptNumber": 1,
         "name": "Login fine applicaton using valid user credentials",
         "result": {
-          "duration": 14211000000,
-          "status": "passed"
+          "duration": 77350000000,
+          "status": "undefined"
         },
         "sourceLocation": {
-          "uri": "features/lauch.feature",
+          "uri": "features\\lauch.feature",
           "line": 3
         }
       },
@@ -491,11 +529,11 @@
         {
           "attachments": [],
           "result": {
-            "duration": 791000000,
+            "duration": 14221000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/hooks.js",
+            "uri": "step_definitions\\hooks.js",
             "line": 22
           },
           "keyword": "Before"
@@ -503,16 +541,16 @@
         {
           "attachments": [],
           "result": {
-            "duration": 4958000000,
+            "duration": 30064000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 7
           },
           "keyword": "Given ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
+            "uri": "features\\lauch.feature",
             "line": 4
           },
           "text": "I launch corparation fine Applciation",
@@ -521,16 +559,16 @@
         {
           "attachments": [],
           "result": {
-            "duration": 10000000,
+            "duration": 98000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 20
           },
           "keyword": "Then ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
+            "uri": "features\\lauch.feature",
             "line": 5
           },
           "text": "I should see the login page",
@@ -539,16 +577,16 @@
         {
           "attachments": [],
           "result": {
-            "duration": 97000000,
+            "duration": 720000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/input_field_steps.js",
+            "uri": "step_definitions\\input_field_steps.js",
             "line": 5
           },
           "keyword": "And ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
+            "uri": "features\\lauch.feature",
             "line": 6
           },
           "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
@@ -557,16 +595,16 @@
         {
           "attachments": [],
           "result": {
-            "duration": 36000000,
+            "duration": 328000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/input_field_steps.js",
+            "uri": "step_definitions\\input_field_steps.js",
             "line": 5
           },
           "keyword": "And ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
+            "uri": "features\\lauch.feature",
             "line": 7
           },
           "text": "I enter \"123456\" in the \"Password\" field",
@@ -575,16 +613,16 @@
         {
           "attachments": [],
           "result": {
-            "duration": 8247000000,
+            "duration": 29817000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/button_steps.js",
+            "uri": "step_definitions\\button_steps.js",
             "line": 5
           },
           "keyword": "Then ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
+            "uri": "features\\lauch.feature",
             "line": 8
           },
           "text": "I click on \"Sign in\" button",
@@ -593,11 +631,43 @@
         {
           "attachments": [],
           "result": {
-            "duration": 72000000,
+            "duration": 33000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/hooks.js",
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 29
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 9
+          },
+          "text": "I should see the Dashboard icon",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "status": "undefined"
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 10
+          },
+          "text": "I should see the Dashboard Profile Name",
+          "arguments": [],
+          "snippet": "Then('I should see the Dashboard Profile Name', function () {\n  // Write code here that turns the phrase above into concrete actions\n  return 'pending';\n});"
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 2069000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\hooks.js",
             "line": 60
           },
           "keyword": "After"
@@ -609,23 +679,23 @@
         "attemptNumber": 1,
         "name": "Login fine applicaton using invalid user credentials",
         "result": {
-          "duration": 13090000000,
+          "duration": 27611000000,
           "status": "passed"
         },
         "sourceLocation": {
-          "uri": "features/lauch.feature",
-          "line": 11
+          "uri": "features\\lauch.feature",
+          "line": 13
         }
       },
       "testSteps": [
         {
           "attachments": [],
           "result": {
-            "duration": 795000000,
+            "duration": 3955000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/hooks.js",
+            "uri": "step_definitions\\hooks.js",
             "line": 22
           },
           "keyword": "Before"
@@ -633,17 +703,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 7203000000,
+            "duration": 8760000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 7
           },
           "keyword": "Given ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 12
+            "uri": "features\\lauch.feature",
+            "line": 14
           },
           "text": "I launch corparation fine Applciation",
           "arguments": []
@@ -651,17 +721,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 7000000,
+            "duration": 52000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 20
           },
           "keyword": "Then ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 13
+            "uri": "features\\lauch.feature",
+            "line": 15
           },
           "text": "I should see the login page",
           "arguments": []
@@ -669,17 +739,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 96000000,
+            "duration": 760000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/input_field_steps.js",
+            "uri": "step_definitions\\input_field_steps.js",
             "line": 5
           },
           "keyword": "And ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 14
+            "uri": "features\\lauch.feature",
+            "line": 16
           },
           "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
           "arguments": []
@@ -687,17 +757,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 34000000,
+            "duration": 263000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/input_field_steps.js",
+            "uri": "step_definitions\\input_field_steps.js",
             "line": 5
           },
           "keyword": "And ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 15
+            "uri": "features\\lauch.feature",
+            "line": 17
           },
           "text": "I enter \"abcdef\" in the \"Password\" field",
           "arguments": []
@@ -705,17 +775,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 4883000000,
+            "duration": 12062000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/button_steps.js",
+            "uri": "step_definitions\\button_steps.js",
             "line": 5
           },
           "keyword": "When ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 16
+            "uri": "features\\lauch.feature",
+            "line": 18
           },
           "text": "I click on \"Sign in\" button",
           "arguments": []
@@ -723,17 +793,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 10000000,
+            "duration": 59000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 25
           },
           "keyword": "Then ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 17
+            "uri": "features\\lauch.feature",
+            "line": 19
           },
           "text": "I should see \"These credentials do not match our records.\" message",
           "arguments": []
@@ -741,11 +811,11 @@
         {
           "attachments": [],
           "result": {
-            "duration": 62000000,
+            "duration": 1700000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/hooks.js",
+            "uri": "step_definitions\\hooks.js",
             "line": 60
           },
           "keyword": "After"
@@ -757,23 +827,23 @@
         "attemptNumber": 1,
         "name": "Login fine applicaton using invalid user credentials",
         "result": {
-          "duration": 11875000000,
+          "duration": 24048000000,
           "status": "passed"
         },
         "sourceLocation": {
-          "uri": "features/lauch.feature",
-          "line": 20
+          "uri": "features\\lauch.feature",
+          "line": 22
         }
       },
       "testSteps": [
         {
           "attachments": [],
           "result": {
-            "duration": 820000000,
+            "duration": 3995000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/hooks.js",
+            "uri": "step_definitions\\hooks.js",
             "line": 22
           },
           "keyword": "Before"
@@ -781,17 +851,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 6268000000,
+            "duration": 6751000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 7
           },
           "keyword": "Given ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 21
+            "uri": "features\\lauch.feature",
+            "line": 23
           },
           "text": "I launch corparation fine Applciation",
           "arguments": []
@@ -799,17 +869,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 7000000,
+            "duration": 51000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 20
           },
           "keyword": "Then ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 22
+            "uri": "features\\lauch.feature",
+            "line": 24
           },
           "text": "I should see the login page",
           "arguments": []
@@ -817,17 +887,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 89000000,
+            "duration": 588000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/input_field_steps.js",
+            "uri": "step_definitions\\input_field_steps.js",
             "line": 5
           },
           "keyword": "And ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 23
+            "uri": "features\\lauch.feature",
+            "line": 25
           },
           "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
           "arguments": []
@@ -835,17 +905,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 46000000,
+            "duration": 236000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/input_field_steps.js",
+            "uri": "step_definitions\\input_field_steps.js",
             "line": 5
           },
           "keyword": "And ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 24
+            "uri": "features\\lauch.feature",
+            "line": 26
           },
           "text": "I enter \"123456\" in the \"Password\" field",
           "arguments": []
@@ -853,17 +923,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 4576000000,
+            "duration": 10669000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/button_steps.js",
+            "uri": "step_definitions\\button_steps.js",
             "line": 5
           },
           "keyword": "When ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 25
+            "uri": "features\\lauch.feature",
+            "line": 27
           },
           "text": "I click on \"Sign in\" button",
           "arguments": []
@@ -871,17 +941,17 @@
         {
           "attachments": [],
           "result": {
-            "duration": 12000000,
+            "duration": 41000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/launch_steps.js",
+            "uri": "step_definitions\\launch_steps.js",
             "line": 25
           },
           "keyword": "Then ",
           "sourceLocation": {
-            "uri": "features/lauch.feature",
-            "line": 26
+            "uri": "features\\lauch.feature",
+            "line": 28
           },
           "text": "I should see \"These credentials do not match our records.\" message",
           "arguments": []
@@ -889,11 +959,11 @@
         {
           "attachments": [],
           "result": {
-            "duration": 57000000,
+            "duration": 1717000000,
             "status": "passed"
           },
           "actionLocation": {
-            "uri": "step_definitions/hooks.js",
+            "uri": "step_definitions\\hooks.js",
             "line": 60
           },
           "keyword": "After"

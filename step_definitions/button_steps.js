@@ -5,3 +5,7 @@
  Then('I click on {string} button', async function (buttonText) {
      return await click.clickByText(scope.page, buttonText);
  });
+
+ Then('I click on {string} text', async function (labelText) {
+    return await click.clickByText(scope.page, labelText);
+});

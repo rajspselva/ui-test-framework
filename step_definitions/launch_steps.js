@@ -25,3 +25,13 @@ Then('I should see the login page', async function() {
 Then('I should see {string} message', function (errorMsg) {
   return span.readText(scope.page, errorMsg);
 });
+
+Then('I should see the Dashboard icon', async function() {
+  await wait.elementVisible(scope.page, '[name="logoimg"]')
+  
+});
+
+Then('I should see the  {string} text', async function (Text) {
+  await span.readText(scope.page, Text)
+});
+

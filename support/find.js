@@ -18,6 +18,7 @@ async function findSpanFieldContainText(page, spanText) {
     return await findFieldByType(page, 'span', spanText);
 }
 
+
 async function findFieldByType(page, inputType, fieldText) {
 
     let matchingElements = await page.$$(inputType)
