@@ -22,6 +22,13 @@ async function findSpanFieldContainText(page, spanText) {
     return await findFieldByType(page, 'span', spanText);
 }
 
+async function fineH2FieldContainText(page, h2TitleText) {
+    return await findFieldByType(page, 'h2', h2TitleText);
+}
+
+async function fineH5FieldContainText(page, h2TitleText) {
+    return await findFieldByType(page, 'h5', h2TitleText);
+}
 
 async function findFieldByType(page, inputType, fieldText) {
 
@@ -32,6 +39,9 @@ async function findFieldByType(page, inputType, fieldText) {
         let lableText = await page.evaluate(
             el => el.innerText.trim(), element
         )
+
+        //console.log('lableText', lableText);
+        
         if (lableText === fieldText) {
             elemetMatched = element;
         }
@@ -48,6 +58,8 @@ module.exports = {
     findFieldByType,
     findInputFieldWithLabel,
     findButtonFieldContainText,
+    findSpanFieldContainText,
+    fineH2FieldContainText,
     findAnchorFieldContainText,
-    findSpanFieldContainText
+    fineH5FieldContainText
 }

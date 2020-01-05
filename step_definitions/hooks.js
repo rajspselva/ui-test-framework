@@ -20,7 +20,7 @@ BeforeAll(async function() {
 })
 
 Before(async function(scenario) {
-  console.log("Before starting test....");
+  console.log("Before starting test ...");
 
   const platform = process.platform === 'darwin' ? 'MAC OSX' : process.platform;
 
@@ -39,14 +39,16 @@ Before(async function(scenario) {
     ]
   }
 
-  console.log('lauch browser instance .....................')
+  if (scope.browser != null) {
+    scope.browser.close();
+  }
+
+  console.log('lauch browser instance ...')
   scope.browser = await puppeteer.launch(launchProperties)
   scope.folder = '/'
 
 
-  if (scope.page != null) {
-    scope.page.close();
-  }
+  console.log('browser page instance start ...')
 
   scope.page = await scope.browser.newPage()
   await scope.page.setCacheEnabled(false);
@@ -55,10 +57,12 @@ Before(async function(scenario) {
     width: constants.width,
     height: constants.height
   })
+
+  console.log('browser page instance end ...')
 })
 
 After(async function() {
-  console.log("After the test test....");
+  console.log("After the test test ...");
   await scope.browser.close();
 })
 
