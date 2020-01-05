@@ -74,7 +74,7 @@
                   "line": 8,
                   "column": 5
                 },
-                "keyword": "Then ",
+                "keyword": "When ",
                 "text": "I click on \"Sign in\" button"
               },
               {
@@ -92,164 +92,169 @@
                   "line": 10,
                   "column": 5
                 },
-                "keyword": "Then ",
-                "text": "I should see the Dashboard Profile Name"
-              }
-            ]
-          },
-          {
-            "type": "Scenario",
-            "tags": [
+                "keyword": "And ",
+                "text": "I should see the \"Welcome S. Mohana\" as message"
+              },
               {
-                "type": "Tag",
+                "type": "Step",
+                "location": {
+                  "line": 11,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Welcome S. Mohana\" message"
+              },
+              {
+                "type": "Step",
                 "location": {
                   "line": 12,
-                  "column": 3
-                },
-                "name": "@st"
-              }
-            ],
-            "location": {
-              "line": 13,
-              "column": 3
-            },
-            "keyword": "Scenario",
-            "name": "Login fine applicaton using invalid user credentials",
-            "steps": [
-              {
-                "type": "Step",
-                "location": {
-                  "line": 14,
-                  "column": 5
-                },
-                "keyword": "Given ",
-                "text": "I launch corparation fine Applciation"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 15,
                   "column": 5
                 },
                 "keyword": "Then ",
-                "text": "I should see the login page"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 16,
-                  "column": 5
-                },
-                "keyword": "And ",
-                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 17,
-                  "column": 5
-                },
-                "keyword": "And ",
-                "text": "I enter \"abcdef\" in the \"Password\" field"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 18,
-                  "column": 5
-                },
-                "keyword": "When ",
-                "text": "I click on \"Sign in\" button"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 19,
-                  "column": 5
-                },
-                "keyword": "Then ",
-                "text": "I should see \"These credentials do not match our records.\" message"
-              }
-            ]
-          },
-          {
-            "type": "Scenario",
-            "tags": [
-              {
-                "type": "Tag",
-                "location": {
-                  "line": 21,
-                  "column": 3
-                },
-                "name": "@st"
-              }
-            ],
-            "location": {
-              "line": 22,
-              "column": 3
-            },
-            "keyword": "Scenario",
-            "name": "Login fine applicaton using invalid user credentials",
-            "steps": [
-              {
-                "type": "Step",
-                "location": {
-                  "line": 23,
-                  "column": 5
-                },
-                "keyword": "Given ",
-                "text": "I launch corparation fine Applciation"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 24,
-                  "column": 5
-                },
-                "keyword": "Then ",
-                "text": "I should see the login page"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 25,
-                  "column": 5
-                },
-                "keyword": "And ",
-                "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 26,
-                  "column": 5
-                },
-                "keyword": "And ",
-                "text": "I enter \"123456\" in the \"Password\" field"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 27,
-                  "column": 5
-                },
-                "keyword": "When ",
-                "text": "I click on \"Sign in\" button"
-              },
-              {
-                "type": "Step",
-                "location": {
-                  "line": 28,
-                  "column": 5
-                },
-                "keyword": "Then ",
-                "text": "I should see \"These credentials do not match our records.\" message"
+                "text": "I should see dropdown menu with \"S. MOHANA\" as profilename"
               }
             ]
           }
         ]
       },
-      "comments": [],
+      "comments": [
+        {
+          "type": "Comment",
+          "location": {
+            "line": 13,
+            "column": 1
+          },
+          "text": "    # And I should see dropdown menu with \"mohanso@avadicorp.com\" as email"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 15,
+            "column": 1
+          },
+          "text": "  # @st"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 16,
+            "column": 1
+          },
+          "text": "  # Scenario: Login fine applicaton using invalid user credentials"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 17,
+            "column": 1
+          },
+          "text": "  #   Given I launch corparation fine Applciation"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 18,
+            "column": 1
+          },
+          "text": "  #   Then I should see the login page"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 19,
+            "column": 1
+          },
+          "text": "  #   And I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 20,
+            "column": 1
+          },
+          "text": "  #   And I enter \"abcdef\" in the \"Password\" field"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 21,
+            "column": 1
+          },
+          "text": "  #   When I click on \"Sign in\" button"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 22,
+            "column": 1
+          },
+          "text": "  #   Then I should see \"These credentials do not match our records.\" message"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 24,
+            "column": 1
+          },
+          "text": "  # @st"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 25,
+            "column": 1
+          },
+          "text": "  # Scenario: Login fine applicaton using invalid user credentials"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 26,
+            "column": 1
+          },
+          "text": "  #   Given I launch corparation fine Applciation"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 27,
+            "column": 1
+          },
+          "text": "  #   Then I should see the login page"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 28,
+            "column": 1
+          },
+          "text": "  #   And I enter \"test@avadicorp.com\" in the \"Email Address\" field"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 29,
+            "column": 1
+          },
+          "text": "  #   And I enter \"123456\" in the \"Password\" field"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 30,
+            "column": 1
+          },
+          "text": "  #   When I click on \"Sign in\" button"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 31,
+            "column": 1
+          },
+          "text": "  #   Then I should see \"These credentials do not match our records.\" message"
+        }
+      ],
       "uri": "features\\lauch.feature"
     }
   ],
@@ -334,175 +339,31 @@
           ]
         },
         {
-          "text": "I should see the Dashboard Profile Name",
+          "text": "I should see the \"Welcome S. Mohana\" as message",
           "arguments": [],
           "locations": [
             {
               "line": 10,
-              "column": 10
-            }
-          ]
-        }
-      ],
-      "uri": "features\\lauch.feature"
-    },
-    {
-      "tags": [
-        {
-          "name": "@st",
-          "location": {
-            "line": 12,
-            "column": 3
-          }
-        }
-      ],
-      "name": "Login fine applicaton using invalid user credentials",
-      "language": "en",
-      "locations": [
-        {
-          "line": 13,
-          "column": 3
-        }
-      ],
-      "steps": [
-        {
-          "text": "I launch corparation fine Applciation",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 14,
-              "column": 11
-            }
-          ]
-        },
-        {
-          "text": "I should see the login page",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 15,
-              "column": 10
-            }
-          ]
-        },
-        {
-          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 16,
               "column": 9
             }
           ]
         },
         {
-          "text": "I enter \"abcdef\" in the \"Password\" field",
+          "text": "I click on \"Welcome S. Mohana\" message",
           "arguments": [],
           "locations": [
             {
-              "line": 17,
-              "column": 9
-            }
-          ]
-        },
-        {
-          "text": "I click on \"Sign in\" button",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 18,
+              "line": 11,
               "column": 10
             }
           ]
         },
         {
-          "text": "I should see \"These credentials do not match our records.\" message",
+          "text": "I should see dropdown menu with \"S. MOHANA\" as profilename",
           "arguments": [],
           "locations": [
             {
-              "line": 19,
-              "column": 10
-            }
-          ]
-        }
-      ],
-      "uri": "features\\lauch.feature"
-    },
-    {
-      "tags": [
-        {
-          "name": "@st",
-          "location": {
-            "line": 21,
-            "column": 3
-          }
-        }
-      ],
-      "name": "Login fine applicaton using invalid user credentials",
-      "language": "en",
-      "locations": [
-        {
-          "line": 22,
-          "column": 3
-        }
-      ],
-      "steps": [
-        {
-          "text": "I launch corparation fine Applciation",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 23,
-              "column": 11
-            }
-          ]
-        },
-        {
-          "text": "I should see the login page",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 24,
-              "column": 10
-            }
-          ]
-        },
-        {
-          "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 25,
-              "column": 9
-            }
-          ]
-        },
-        {
-          "text": "I enter \"123456\" in the \"Password\" field",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 26,
-              "column": 9
-            }
-          ]
-        },
-        {
-          "text": "I click on \"Sign in\" button",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 27,
-              "column": 10
-            }
-          ]
-        },
-        {
-          "text": "I should see \"These credentials do not match our records.\" message",
-          "arguments": [],
-          "locations": [
-            {
-              "line": 28,
+              "line": 12,
               "column": 10
             }
           ]
@@ -517,8 +378,9 @@
         "attemptNumber": 1,
         "name": "Login fine applicaton using valid user credentials",
         "result": {
-          "duration": 77350000000,
-          "status": "undefined"
+          "duration": 68364000000,
+          "status": "failed",
+          "exception": "TimeoutError: Navigation Timeout Exceeded: 30000ms exceeded\n    at Promise.then (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.waitForNavigation (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\Page.js:694:49)\n    at Page.<anonymous> (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at Object.clickByAnchortext (E:\\testing-framwork\\ui-test-framework\\support\\click.js:19:10)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
         },
         "sourceLocation": {
           "uri": "features\\lauch.feature",
@@ -529,7 +391,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 14221000000,
+            "duration": 4251000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -541,7 +403,7 @@
         {
           "attachments": [],
           "result": {
-            "duration": 30064000000,
+            "duration": 7194000000,
             "status": "passed"
           },
           "actionLocation": {
@@ -559,12 +421,12 @@
         {
           "attachments": [],
           "result": {
-            "duration": 98000000,
+            "duration": 55000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions\\launch_steps.js",
-            "line": 20
+            "line": 19
           },
           "keyword": "Then ",
           "sourceLocation": {
@@ -577,12 +439,12 @@
         {
           "attachments": [],
           "result": {
-            "duration": 720000000,
+            "duration": 698000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions\\input_field_steps.js",
-            "line": 5
+            "line": 6
           },
           "keyword": "And ",
           "sourceLocation": {
@@ -595,12 +457,12 @@
         {
           "attachments": [],
           "result": {
-            "duration": 328000000,
+            "duration": 258000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions\\input_field_steps.js",
-            "line": 5
+            "line": 6
           },
           "keyword": "And ",
           "sourceLocation": {
@@ -613,14 +475,14 @@
         {
           "attachments": [],
           "result": {
-            "duration": 29817000000,
+            "duration": 22537000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions\\button_steps.js",
             "line": 5
           },
-          "keyword": "Then ",
+          "keyword": "When ",
           "sourceLocation": {
             "uri": "features\\lauch.feature",
             "line": 8
@@ -631,12 +493,12 @@
         {
           "attachments": [],
           "result": {
-            "duration": 33000000,
+            "duration": 31000000,
             "status": "passed"
           },
           "actionLocation": {
             "uri": "step_definitions\\launch_steps.js",
-            "line": 29
+            "line": 28
           },
           "keyword": "Then ",
           "sourceLocation": {
@@ -649,317 +511,61 @@
         {
           "attachments": [],
           "result": {
-            "status": "undefined"
+            "duration": 1259000000,
+            "status": "passed"
           },
-          "keyword": "Then ",
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 32
+          },
+          "keyword": "And ",
           "sourceLocation": {
             "uri": "features\\lauch.feature",
             "line": 10
           },
-          "text": "I should see the Dashboard Profile Name",
-          "arguments": [],
-          "snippet": "Then('I should see the Dashboard Profile Name', function () {\n  // Write code here that turns the phrase above into concrete actions\n  return 'pending';\n});"
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 2069000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\hooks.js",
-            "line": 60
-          },
-          "keyword": "After"
-        }
-      ]
-    },
-    {
-      "testCase": {
-        "attemptNumber": 1,
-        "name": "Login fine applicaton using invalid user credentials",
-        "result": {
-          "duration": 27611000000,
-          "status": "passed"
-        },
-        "sourceLocation": {
-          "uri": "features\\lauch.feature",
-          "line": 13
-        }
-      },
-      "testSteps": [
-        {
-          "attachments": [],
-          "result": {
-            "duration": 3955000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\hooks.js",
-            "line": 22
-          },
-          "keyword": "Before"
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 8760000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\launch_steps.js",
-            "line": 7
-          },
-          "keyword": "Given ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 14
-          },
-          "text": "I launch corparation fine Applciation",
+          "text": "I should see the \"Welcome S. Mohana\" as message",
           "arguments": []
         },
         {
           "attachments": [],
           "result": {
-            "duration": 52000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\launch_steps.js",
-            "line": 20
-          },
-          "keyword": "Then ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 15
-          },
-          "text": "I should see the login page",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 760000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\input_field_steps.js",
-            "line": 5
-          },
-          "keyword": "And ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 16
-          },
-          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 263000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\input_field_steps.js",
-            "line": 5
-          },
-          "keyword": "And ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 17
-          },
-          "text": "I enter \"abcdef\" in the \"Password\" field",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 12062000000,
-            "status": "passed"
+            "duration": 30335000000,
+            "exception": "TimeoutError: Navigation Timeout Exceeded: 30000ms exceeded\n    at Promise.then (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.waitForNavigation (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\Page.js:694:49)\n    at Page.<anonymous> (E:\\testing-framwork\\ui-test-framework\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at Object.clickByAnchortext (E:\\testing-framwork\\ui-test-framework\\support\\click.js:19:10)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+            "status": "failed"
           },
           "actionLocation": {
             "uri": "step_definitions\\button_steps.js",
-            "line": 5
+            "line": 9
           },
           "keyword": "When ",
           "sourceLocation": {
             "uri": "features\\lauch.feature",
-            "line": 18
+            "line": 11
           },
-          "text": "I click on \"Sign in\" button",
+          "text": "I click on \"Welcome S. Mohana\" message",
           "arguments": []
         },
         {
           "attachments": [],
           "result": {
-            "duration": 59000000,
-            "status": "passed"
+            "status": "skipped"
           },
           "actionLocation": {
             "uri": "step_definitions\\launch_steps.js",
-            "line": 25
+            "line": 36
           },
           "keyword": "Then ",
           "sourceLocation": {
             "uri": "features\\lauch.feature",
-            "line": 19
+            "line": 12
           },
-          "text": "I should see \"These credentials do not match our records.\" message",
+          "text": "I should see dropdown menu with \"S. MOHANA\" as profilename",
           "arguments": []
         },
         {
           "attachments": [],
           "result": {
-            "duration": 1700000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\hooks.js",
-            "line": 60
-          },
-          "keyword": "After"
-        }
-      ]
-    },
-    {
-      "testCase": {
-        "attemptNumber": 1,
-        "name": "Login fine applicaton using invalid user credentials",
-        "result": {
-          "duration": 24048000000,
-          "status": "passed"
-        },
-        "sourceLocation": {
-          "uri": "features\\lauch.feature",
-          "line": 22
-        }
-      },
-      "testSteps": [
-        {
-          "attachments": [],
-          "result": {
-            "duration": 3995000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\hooks.js",
-            "line": 22
-          },
-          "keyword": "Before"
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 6751000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\launch_steps.js",
-            "line": 7
-          },
-          "keyword": "Given ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 23
-          },
-          "text": "I launch corparation fine Applciation",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 51000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\launch_steps.js",
-            "line": 20
-          },
-          "keyword": "Then ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 24
-          },
-          "text": "I should see the login page",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 588000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\input_field_steps.js",
-            "line": 5
-          },
-          "keyword": "And ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 25
-          },
-          "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 236000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\input_field_steps.js",
-            "line": 5
-          },
-          "keyword": "And ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 26
-          },
-          "text": "I enter \"123456\" in the \"Password\" field",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 10669000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\button_steps.js",
-            "line": 5
-          },
-          "keyword": "When ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 27
-          },
-          "text": "I click on \"Sign in\" button",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 41000000,
-            "status": "passed"
-          },
-          "actionLocation": {
-            "uri": "step_definitions\\launch_steps.js",
-            "line": 25
-          },
-          "keyword": "Then ",
-          "sourceLocation": {
-            "uri": "features\\lauch.feature",
-            "line": 28
-          },
-          "text": "I should see \"These credentials do not match our records.\" message",
-          "arguments": []
-        },
-        {
-          "attachments": [],
-          "result": {
-            "duration": 1717000000,
+            "duration": 1746000000,
             "status": "passed"
           },
           "actionLocation": {

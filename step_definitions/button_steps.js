@@ -1,4 +1,4 @@
- const { Then } = require('cucumber')
+ const { Then, When } = require('cucumber')
  const click = require('../support/click')
  const scope = require('../support/scope')
 
@@ -6,6 +6,6 @@
      return await click.clickByText(scope.page, buttonText);
  });
 
- Then('I click on {string} text', async function (labelText) {
-    return await click.clickByText(scope.page, labelText);
+ When('I click on {string} message', async function (welcomeText) {
+    return await click.clickByAnchortext(scope.page, welcomeText);
 });

@@ -14,6 +14,10 @@ async function findButtonFieldContainText(page, buttonText) {
     return await findFieldByType(page, 'button', buttonText);
 }
 
+async function findAnchorFieldContainText(page, anchorText) {
+    return await findFieldByType(page, 'a', anchorText);
+}
+
 async function findSpanFieldContainText(page, spanText) {
     return await findFieldByType(page, 'span', spanText);
 }
@@ -44,5 +48,6 @@ module.exports = {
     findFieldByType,
     findInputFieldWithLabel,
     findButtonFieldContainText,
+    findAnchorFieldContainText,
     findSpanFieldContainText
 }
