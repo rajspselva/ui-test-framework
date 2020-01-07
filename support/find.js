@@ -1,12 +1,12 @@
 
 async function findInputFieldWithLabel(page, labelText) {
-    
+
     let elemetMatched = await findFieldByType(page, 'label', labelText)
-   
+
     const labelElement = await page.evaluate(
         el => el.getAttribute('for'), elemetMatched
     )
-    
+
     return await page.$(`input[id=${labelElement}`)
 }
 
@@ -70,7 +70,25 @@ async function findAllElementValuesByType(page, element, inputType) {
     return values
 }
 
-async function findElementByCssSelector(page, cssSelecctor) {
+async function findAllElementValuesByCssSelector(page, element, cssSelecctor) {
+
+    let matchingElements = await element[0].$$(`.${cssSelecctor}`)
+    let values = []
+    for (let element of matchingElements) {
+        let lableText = await page.evaluate(
+            el => el.innerText.trim(), element
+        )
+        values.push(lableText)
+    }
+
+    if (values.length == 0) {
+        throw new Error(`Unable to find any values : ${inputType}`)
+    }
+
+    return values
+}
+
+async function findElementsByCssSelector(page, cssSelecctor) {
     return await page.$$(`.${cssSelecctor}`)
 }
 
@@ -82,6 +100,7 @@ module.exports = {
     fineH2FieldContainText,
     findAnchorFieldContainText,
     fineH5FieldContainText,
-    findElementByCssSelector,
-    findAllElementValuesByType
+    findElementsByCssSelector,
+    findAllElementValuesByType,
+    findAllElementValuesByCssSelector
 }

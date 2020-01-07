@@ -1,31 +1,35 @@
 
-async function findDropDownFieldByCss(page, cssSelector) {
-    const element = await find.findElementByCssSelector(page, cssSelector)
-    return await findDropDownOptions(page, element)
+async function findUserMenuOptions(page, cssSelector) {
+    const options = await find.findElementsByCssSelector(page, cssSelector)
+    const values =  await find.findAllElementValuesByType(page, options, 'li')
+    return await extractOptionValues(values)
 }
 
-async function findDropDownOptions(page, dropDown) {
-    
-    const values =  await find.findAllElementValuesByType(page, dropDown, 'li')
+
+async function findMainMenuOptions(page, cssSelector) {
+    const options = await find.findElementsByCssSelector(page, cssSelector)
+    const values =  await find.findAllElementValuesByCssSelector(page, options, 'nav-item')
+    return await extractOptionValues(values)
+}
+
+async function extractOptionValues(values) {
 
     let newValues = []
      values.forEach(element => {
          let temp = element.split("\n\n")
          if (temp.length == 1) {
-            newValues.push(element)
+            newValues.push([element])
          } else {
              temp.forEach(value => {
-                 newValues.push(value)
+                 newValues.push([value])
              })
          }
      })
 
-     let rows = []
-     rows.push(newValues)
-     return rows
-     
+     return newValues
 }
 
 module.exports = {
-    findDropDownFieldByCss
+    findUserMenuOptions,
+    findMainMenuOptions
 }

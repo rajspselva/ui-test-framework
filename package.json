@@ -23,6 +23,8 @@
     "puppeteer": "^1.20.0"
   },
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-exclude": "^2.0.2",
     "udid": "^0.1.4",
     "uuid": "^3.3.3"
   }

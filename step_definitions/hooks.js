@@ -83,4 +83,9 @@ function setGlobalVariables() {
   global.wait = require("../support/wait")
   global.span = require("../support/span")
   global.find = require("../support/find")
+
+  global.chai = require('chai');
+  chai.use(require('chai-exclude'));
+  global.assert = chai.assert;
+  global.expect = chai.expect;
 }

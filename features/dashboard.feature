@@ -1,5 +1,5 @@
 Feature: Verify Dashboard
-    @dashboard
+
     Scenario: Display dashboard for successful login
         Given I launch corparation fine Applciation
         Then I should see the login page
@@ -15,4 +15,3 @@ Feature: Verify Dashboard
         #And I should see "Category Based Fine Report" as card title
         #And I should see "Division Based Fine Report" as card title
         #And I should see "Fine Collection" as card title
-
