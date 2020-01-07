@@ -1,6 +1,6 @@
 {
   "default": {
-    "baseUrl": "http://127.0.0.1:8000",
+    "baseUrl": "http://fine.stage.ourdream.city/",
     "width": 1680,
     "height": 1080,
     "headlessMode": false,

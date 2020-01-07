@@ -1,5 +1,3 @@
-const find = require('../support/find')
-
 async function readCardByTitle(page, titleMsg) {
 
 }

@@ -6,23 +6,22 @@ const {
   setDefaultTimeout
 } = require('cucumber')
 
-const scope = require('../support/scope')
-const constants = require('../support/constants')
 const puppeteer = require('puppeteer')
 
+BeforeAll(async function () {
+  console.log("Before starting all test suite....")
 
-BeforeAll(async function() {
-  console.log("Before starting all test suite....");
+  setGlobalVariables()
   scope.driver = puppeteer
+
   let env = process.env.NODE_ENV
-  console.log('Node Environment :', env);
+  console.log('Node Environment :', env)
   setDefaultTimeout(constants.pageTimeout * 1000)
 })
 
-Before(async function(scenario) {
-  console.log("Before starting test ...");
+Before(async function (scenario) {
 
-  const platform = process.platform === 'darwin' ? 'MAC OSX' : process.platform;
+  console.log("Before starting test ...")
 
   let launchProperties = {
     headless: constants.headlessMode,
@@ -40,7 +39,7 @@ Before(async function(scenario) {
   }
 
   if (scope.browser != null) {
-    scope.browser.close();
+    scope.browser.close()
   }
 
   console.log('lauch browser instance ...')
@@ -51,7 +50,7 @@ Before(async function(scenario) {
   console.log('browser page instance start ...')
 
   scope.page = await scope.browser.newPage()
-  await scope.page.setCacheEnabled(false);
+  await scope.page.setCacheEnabled(false)
 
   await scope.page.setViewport({
     width: constants.width,
@@ -61,14 +60,27 @@ Before(async function(scenario) {
   console.log('browser page instance end ...')
 })
 
-After(async function() {
-  console.log("After the test test ...");
-  await scope.browser.close();
+After(async function () {
+  console.log("After the test test ...")
+  await scope.browser.close()
 })
 
-AfterAll(async function() {
-  console.log("After execution of all tests....");
+AfterAll(async function () {
+  console.log("After execution of all tests....")
   if (scope.browser != null) {
-     await scope.browser.close()
+    await scope.browser.close()
   }
 })
+
+function setGlobalVariables() {
+  global.scope = require('../support/scope')
+  global.click = require('../support/click')
+  global.card = require('../support/card')
+  global.constants = require('../support/constants')
+  global.dropdown = require('../support/dropdown')
+  global.field = require('../support/field')
+  global.title = require('../support/title')
+  global.wait = require("../support/wait")
+  global.span = require("../support/span")
+  global.find = require("../support/find")
+}
