@@ -12,15 +12,20 @@ async function clickByText(page, buttonText) {
   ])
 }
 
-async function clickByAnchortext(page, anchorText) {
+async function clickByAnchortext(page, anchorText, doubleClick) {
   const element = await find.findAnchorFieldContainText(page, anchorText)
   await element.focus()
-  await Promise.all([
-    element.click(), //TODO:- Application defect, it should work on single click.
-    element.click()
-  ])
 
-  await delay(5000)
+  if (doubleClick) {
+    await Promise.all([
+      element.click(), //TODO:- Application defect, it should work on single click.
+      element.click()
+    ])
+  } else {
+    await element.click()
+  }
+
+  await delay(4000);
 }
 
 function delay(time) {
