@@ -1,0 +1,1943 @@
+{
+  "gherkinDocuments": [
+    {
+      "type": "GherkinDocument",
+      "feature": {
+        "type": "Feature",
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Verify Dashboard",
+        "children": [
+          {
+            "type": "Scenario",
+            "tags": [],
+            "location": {
+              "line": 3,
+              "column": 5
+            },
+            "keyword": "Scenario",
+            "name": "Display dashboard for successful login",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 4,
+                  "column": 9
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 5,
+                  "column": 9
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 6,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 7,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 8,
+                  "column": 9
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 9,
+                  "column": 9
+                },
+                "keyword": "Then ",
+                "text": "I should see \"Smart Survey\" title"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 10,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see \"Today Fine Amount\" as card title and the amount as \"0.00\""
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 11,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see \"Weekly Fine Amount\" as card title and the amount as \"0.00\""
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 12,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see \"Monthly Fine Amount\" as card title and the amount as \"0.00\""
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 13,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see \"Yearly Fine Amount\" as card title and the amount as \"0.00\""
+              }
+            ]
+          }
+        ]
+      },
+      "comments": [
+        {
+          "type": "Comment",
+          "location": {
+            "line": 14,
+            "column": 1
+          },
+          "text": "        #And I should see \"Ward Based Fine Report\" as card title"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 15,
+            "column": 1
+          },
+          "text": "        #And I should see \"Category Based Fine Report\" as card title"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 16,
+            "column": 1
+          },
+          "text": "        #And I should see \"Division Based Fine Report\" as card title"
+        },
+        {
+          "type": "Comment",
+          "location": {
+            "line": 17,
+            "column": 1
+          },
+          "text": "        #And I should see \"Fine Collection\" as card title"
+        }
+      ],
+      "uri": "features\\dashboard.feature"
+    },
+    {
+      "type": "GherkinDocument",
+      "feature": {
+        "type": "Feature",
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Launch Google Application",
+        "children": [
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 3,
+                  "column": 3
+                },
+                "name": "@dashboard"
+              }
+            ],
+            "location": {
+              "line": 4,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using valid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 5,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 6,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 7,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 8,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 9,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 11,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I should see the \"Welcome S. Mohana\" as message"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 12,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I should see the following menu option on the left had side:",
+                "argument": {
+                  "type": "DataTable",
+                  "location": {
+                    "line": 13,
+                    "column": 7
+                  },
+                  "rows": [
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 13,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 13,
+                            "column": 9
+                          },
+                          "value": "Dashboard"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 14,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 14,
+                            "column": 9
+                          },
+                          "value": "Fine Report"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 15,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 15,
+                            "column": 9
+                          },
+                          "value": "Department"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 16,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 16,
+                            "column": 9
+                          },
+                          "value": "Division/Ward"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 17,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 17,
+                            "column": 9
+                          },
+                          "value": "Street List"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 18,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 18,
+                            "column": 9
+                          },
+                          "value": "Fine Category"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 19,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 19,
+                            "column": 9
+                          },
+                          "value": "User Role"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 20,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 20,
+                            "column": 9
+                          },
+                          "value": "User Management"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 21,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 21,
+                            "column": 9
+                          },
+                          "value": "Time Config"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 22,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Welcome S. Mohana\" message"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 23,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see dropdown menu with below options:",
+                "argument": {
+                  "type": "DataTable",
+                  "location": {
+                    "line": 24,
+                    "column": 7
+                  },
+                  "rows": [
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 24,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 24,
+                            "column": 9
+                          },
+                          "value": "S. MOHANA"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 25,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 25,
+                            "column": 9
+                          },
+                          "value": "mohanso@avadicorp.com"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 26,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 26,
+                            "column": 9
+                          },
+                          "value": "Change password"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 27,
+                        "column": 7
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 27,
+                            "column": 9
+                          },
+                          "value": "Logout"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 29,
+                  "column": 5
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 30,
+              "column": 5
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 31,
+                  "column": 7
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 32,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 33,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 34,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"abcdef\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 35,
+                  "column": 7
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 36,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 38,
+                  "column": 5
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 39,
+              "column": 5
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 40,
+                  "column": 7
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 41,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 42,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 43,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 44,
+                  "column": 7
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 45,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          }
+        ]
+      },
+      "comments": [
+        {
+          "type": "Comment",
+          "location": {
+            "line": 10,
+            "column": 1
+          },
+          "text": "    # Then  I should see the Dashboard icon"
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "type": "GherkinDocument",
+      "feature": {
+        "type": "Feature",
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Login Fine Application",
+        "children": [
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 2,
+                  "column": 3
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 3,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using valid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 4,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 5,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 6,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 7,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 8,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 10,
+                  "column": 3
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 11,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 12,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 13,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 14,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 15,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"abcdef\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 16,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 17,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 19,
+                  "column": 3
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 20,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 21,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 22,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 23,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 24,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 25,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 26,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          }
+        ]
+      },
+      "comments": [],
+      "uri": "features\\login.feature"
+    }
+  ],
+  "pickles": [
+    {
+      "tags": [],
+      "name": "Display dashboard for successful login",
+      "language": "en",
+      "locations": [
+        {
+          "line": 3,
+          "column": 5
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 4,
+              "column": 15
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 5,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 6,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 7,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 8,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I should see \"Smart Survey\" title",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 9,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I should see \"Today Fine Amount\" as card title and the amount as \"0.00\"",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 10,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see \"Weekly Fine Amount\" as card title and the amount as \"0.00\"",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 11,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see \"Monthly Fine Amount\" as card title and the amount as \"0.00\"",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 12,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see \"Yearly Fine Amount\" as card title and the amount as \"0.00\"",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 13,
+              "column": 13
+            }
+          ]
+        }
+      ],
+      "uri": "features\\dashboard.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@dashboard",
+          "location": {
+            "line": 3,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using valid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 4,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 5,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 6,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 7,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 8,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 9,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see the \"Welcome S. Mohana\" as message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 11,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I should see the following menu option on the left had side:",
+          "arguments": [
+            {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 13,
+                        "column": 9
+                      },
+                      "value": "Dashboard"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 14,
+                        "column": 9
+                      },
+                      "value": "Fine Report"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 15,
+                        "column": 9
+                      },
+                      "value": "Department"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 16,
+                        "column": 9
+                      },
+                      "value": "Division/Ward"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 17,
+                        "column": 9
+                      },
+                      "value": "Street List"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 18,
+                        "column": 9
+                      },
+                      "value": "Fine Category"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 19,
+                        "column": 9
+                      },
+                      "value": "User Role"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 20,
+                        "column": 9
+                      },
+                      "value": "User Management"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 21,
+                        "column": 9
+                      },
+                      "value": "Time Config"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "line": 12,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Welcome S. Mohana\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 22,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see dropdown menu with below options:",
+          "arguments": [
+            {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 24,
+                        "column": 9
+                      },
+                      "value": "S. MOHANA"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 25,
+                        "column": 9
+                      },
+                      "value": "mohanso@avadicorp.com"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 26,
+                        "column": 9
+                      },
+                      "value": "Change password"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 27,
+                        "column": 9
+                      },
+                      "value": "Logout"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "line": 23,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 29,
+            "column": 5
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 30,
+          "column": 5
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 31,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 32,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 33,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I enter \"abcdef\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 34,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 35,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 36,
+              "column": 12
+            }
+          ]
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 38,
+            "column": 5
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 39,
+          "column": 5
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 40,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 41,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 42,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 43,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 44,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 45,
+              "column": 12
+            }
+          ]
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 2,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using valid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 4,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 5,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 6,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 7,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 8,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\login.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 10,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 11,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 12,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 13,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 14,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"abcdef\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 15,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 16,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 17,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\login.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 19,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 20,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 21,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 22,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 23,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 24,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 25,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 26,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\login.feature"
+    }
+  ],
+  "testCaseAttempts": [
+    {
+      "testCase": {
+        "attemptNumber": 1,
+        "name": "Login fine applicaton using valid user credentials",
+        "result": {
+          "duration": 34698000000,
+          "status": "passed"
+        },
+        "sourceLocation": {
+          "uri": "features\\lauch.feature",
+          "line": 4
+        }
+      },
+      "testSteps": [
+        {
+          "attachments": [],
+          "result": {
+            "duration": 1357000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\hooks.js",
+            "line": 22
+          },
+          "keyword": "Before"
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 10840000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 6
+          },
+          "keyword": "Given ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 5
+          },
+          "text": "I launch corparation fine Applciation",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 28000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 18
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 6
+          },
+          "text": "I should see the login page",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 282000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\input_field_steps.js",
+            "line": 3
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 7
+          },
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 99000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\input_field_steps.js",
+            "line": 3
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 8
+          },
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 15251000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\button_steps.js",
+            "line": 3
+          },
+          "keyword": "When ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 9
+          },
+          "text": "I click on \"Sign in\" button",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 688000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 31
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 11
+          },
+          "text": "I should see the \"Welcome S. Mohana\" as message",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 41000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 39
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 12
+          },
+          "text": "I should see the following menu option on the left had side:",
+          "arguments": [
+            {
+              "rows": [
+                [
+                  "Dashboard"
+                ],
+                [
+                  "Fine Report"
+                ],
+                [
+                  "Department"
+                ],
+                [
+                  "Division/Ward"
+                ],
+                [
+                  "Street List"
+                ],
+                [
+                  "Fine Category"
+                ],
+                [
+                  "User Role"
+                ],
+                [
+                  "User Management"
+                ],
+                [
+                  "Time Config"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 5163000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\button_steps.js",
+            "line": 7
+          },
+          "keyword": "When ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 22
+          },
+          "text": "I click on \"Welcome S. Mohana\" message",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 20000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\dropdown_steps.js",
+            "line": 3
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\lauch.feature",
+            "line": 23
+          },
+          "text": "I should see dropdown menu with below options:",
+          "arguments": [
+            {
+              "rows": [
+                [
+                  "S. MOHANA"
+                ],
+                [
+                  "mohanso@avadicorp.com"
+                ],
+                [
+                  "Change password"
+                ],
+                [
+                  "Logout"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 929000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\hooks.js",
+            "line": 63
+          },
+          "keyword": "After"
+        }
+      ]
+    }
+  ]
+}

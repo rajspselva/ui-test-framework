@@ -15,3 +15,13 @@ Feature: Verify Dashboard
         #And I should see "Category Based Fine Report" as card title
         #And I should see "Division Based Fine Report" as card title
         #And I should see "Fine Collection" as card title
+        And I should see the the following list of user list with fine amount:
+            | S | S. MOHANA    | Sanitary Officer    | 4708421002 |
+            | A | ABDUL JAFFAR | Sanitary Inspector  | 8532       |
+            | A | A.NAGARAJ    | Sanitary Inspector  | 0          |
+            | R | RAVICHANDRAN | Sanitary Inspector  | 0          |
+            | G | G.PRAKASH    | Sanitary Inspector  | 10000      |
+            | S | S.PARAKASH   | Sanitary Inspector  | 0          |
+            | S | S.SIVAKUMAR  | Sanitary Inspector  | 0          |
+            | S | SIVAKUMAR    | Sanitary Supervisor | 0          |
+            | P | POUL         | Sanitary Supervisor | 0          |
