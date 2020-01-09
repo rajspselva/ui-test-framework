@@ -1,14 +1,14 @@
 
 async function findUserMenuOptions(page, cssSelector) {
     const options = await find.findElementsByCssSelector(page, cssSelector)
-    const values =  await find.findAllElementValuesByType(page, options, 'li')
+    const values =  await find.findAllSiblingElementValuesByType(page, options, 'li')
     return await extractOptionValues(values)
 }
 
 
 async function findMainMenuOptions(page, cssSelector) {
     const options = await find.findElementsByCssSelector(page, cssSelector)
-    const values =  await find.findAllElementValuesByCssSelector(page, options, 'nav-item')
+    const values =  await find.findAllSibilingElementValuesByCssSelector(page, options, 'nav-item')
     return await extractOptionValues(values)
 }
 

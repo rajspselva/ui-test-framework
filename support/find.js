@@ -52,9 +52,9 @@ async function findFieldByType(page, inputType, fieldText) {
     return elemetMatched
 }
 
-async function findAllElementValuesByType(page, element, inputType) {
+async function findAllSiblingElementValuesByType(page, elements, inputType) {
 
-    let matchingElements = await element[0].$$(inputType)
+    let matchingElements = await elements[0].$$(inputType)
     let values = []
     for (let element of matchingElements) {
         let lableText = await page.evaluate(
@@ -70,11 +70,28 @@ async function findAllElementValuesByType(page, element, inputType) {
     return values
 }
 
-async function findAllElementValuesByCssSelector(page, element, cssSelecctor) {
+async function findAllSibilingElementValuesByCssSelector(page, elements, cssSelecctor) {
 
-    let matchingElements = await element[0].$$(`.${cssSelecctor}`)
+    let matchingElements = await elements[0].$$(`.${cssSelecctor}`)
     let values = []
     for (let element of matchingElements) {
+        let lableText = await page.evaluate(
+            el => el.innerText.trim(), element
+        )
+        values.push(lableText)
+    }
+
+    if (values.length == 0) {
+        throw new Error(`Unable to find any values : ${inputType}`)
+    }
+
+    return values
+}
+
+async function findAllElementsValues(page, elements) {
+
+    let values = []
+    for (let element of elements) {
         let lableText = await page.evaluate(
             el => el.innerText.trim(), element
         )
@@ -101,6 +118,7 @@ module.exports = {
     findAnchorFieldContainText,
     fineH5FieldContainText,
     findElementsByCssSelector,
-    findAllElementValuesByType,
-    findAllElementValuesByCssSelector
+    findAllSiblingElementValuesByType,
+    findAllSibilingElementValuesByCssSelector,
+    findAllElementsValues
 }

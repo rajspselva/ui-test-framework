@@ -1,12 +1,24 @@
-async function readCardByTitle(page, titleMsg) {
-
+async function findFineAmountCards() {
+  const elements = await find.findElementsByCssSelector(scope.page, 'card.fine-card')
+  const values = await find.findAllElementsValues(scope.page, elements);
+  return await processCardValues(values);
 }
 
-async function readCardFineAmount(card, fineAmt) {
-
+async function processCardValues(values) {
+  let rows = [];
+  values.forEach(value => {
+    let temp = value.split("\n");
+      let columns = []
+      temp.forEach(column => {
+        if (column.trim() !== "") {
+          columns.push(column.trim())
+        }
+      })
+      rows.push(columns)
+  })
+  return rows
 }
 
 module.exports = {
-    readCardByTitle,
-    readCardFineAmount
+  findFineAmountCards
 }
