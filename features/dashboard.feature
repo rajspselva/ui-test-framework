@@ -32,7 +32,7 @@ Feature: Verify Dashboard
             | Weekly Fine Amount  | 0.00              | View Report |
             | Monthly Fine Amount | 32,68,353.00      | View Report |
             | Yearly Fine Amount  | 4,72,22,53,416.00 | View Report |
-        And I should see the the following list of user list with fine amount:
+        And I should see the the following list of users with fine amount:
             | S | S. MOHANA    | Sanitary Officer    | 4708421002 |
             | A | ABDUL JAFFAR | Sanitary Inspector  | 8532       |
             | A | A.NAGARAJ    | Sanitary Inspector  | 0          |
@@ -42,3 +42,6 @@ Feature: Verify Dashboard
             | S | S.SIVAKUMAR  | Sanitary Inspector  | 0          |
             | S | SIVAKUMAR    | Sanitary Supervisor | 0          |
             | P | POUL         | Sanitary Supervisor | 0          |
+        When I click on "Today" link
+
+    

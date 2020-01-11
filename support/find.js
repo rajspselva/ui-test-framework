@@ -109,6 +109,12 @@ async function findElementsByCssSelector(page, cssSelecctor) {
     return await page.$$(`.${cssSelecctor}`)
 }
 
+async function findElementById(page, elementId){
+    return await page.$(`#${elementId}`)
+
+}
+
+
 module.exports = {
     findFieldByType,
     findInputFieldWithLabel,
@@ -120,5 +126,6 @@ module.exports = {
     findElementsByCssSelector,
     findAllSiblingElementValuesByType,
     findAllSibilingElementValuesByCssSelector,
-    findAllElementsValues
+    findAllElementsValues,
+    findElementById
 }

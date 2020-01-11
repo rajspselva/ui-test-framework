@@ -11,3 +11,7 @@
  When('I click on {string} message again', async function (welcomeText) {
      return await click.clickByAnchortext(scope.page, welcomeText, false)
  })
+
+ When('I click on {string} link', async function (linkText) {
+    return await click.clickByAnchortext(scope.page, linkText, false)
+})
