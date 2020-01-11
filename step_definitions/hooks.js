@@ -9,7 +9,7 @@ const {
 const puppeteer = require('puppeteer')
 
 BeforeAll(async function () {
-  console.log("Before starting all test suite....")
+  console.log('Before starting all test suite....')
 
   setGlobalVariables()
   scope.driver = puppeteer
@@ -21,7 +21,7 @@ BeforeAll(async function () {
 
 Before(async function (scenario) {
 
-  console.log("Before starting test ...")
+  console.log('Before starting test ...')
 
   let launchProperties = {
     headless: constants.headlessMode,
@@ -61,12 +61,12 @@ Before(async function (scenario) {
 })
 
 After(async function () {
-  console.log("After the test test ...")
+  console.log('After the test test ...')
   await scope.browser.close()
 })
 
 AfterAll(async function () {
-  console.log("After execution of all tests....")
+  console.log('After execution of all tests....')
   if (scope.browser != null) {
     await scope.browser.close()
   }
@@ -80,9 +80,11 @@ function setGlobalVariables() {
   global.dropdown = require('../support/dropdown')
   global.field = require('../support/field')
   global.title = require('../support/title')
-  global.wait = require("../support/wait")
-  global.span = require("../support/span")
-  global.find = require("../support/find")
+  global.wait = require('../support/wait')
+  global.span = require('../support/span')
+  global.find = require('../support/find')
+  global.link = require('../support/link')
+  global.table = require('../support/table')
 
   global.chai = require('chai');
   chai.use(require('chai-exclude'));

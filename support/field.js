@@ -5,6 +5,11 @@ async function sendText(page, labelText, inputValue) {
     await field.type(inputValue)
 }
 
+async function findInputFieldPlaceHolderByName(page, placeholderText) {
+    return await find.findInputFieldByPlaceHolderValue(page, placeholderText)
+}
+
 module.exports = {
-    sendText
+    sendText,
+    findInputFieldPlaceHolderByName
 }
