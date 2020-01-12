@@ -1,0 +1,3048 @@
+{
+  "gherkinDocuments": [
+    {
+      "type": "GherkinDocument",
+      "feature": {
+        "type": "Feature",
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Verify Dashboard",
+        "children": [
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 3,
+                  "column": 5
+                },
+                "name": "@dashboard"
+              }
+            ],
+            "location": {
+              "line": 4,
+              "column": 5
+            },
+            "keyword": "Scenario",
+            "name": "Display dashboard for successful login",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 5,
+                  "column": 9
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 6,
+                  "column": 9
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 7,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 8,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 9,
+                  "column": 9
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 10,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see the \"Welcome S. Mohana\" as message"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 11,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see the following menu option on the left had side:",
+                "argument": {
+                  "type": "DataTable",
+                  "location": {
+                    "line": 12,
+                    "column": 13
+                  },
+                  "rows": [
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 12,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 12,
+                            "column": 15
+                          },
+                          "value": "Dashboard"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 13,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 13,
+                            "column": 15
+                          },
+                          "value": "Fine Report"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 14,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 14,
+                            "column": 15
+                          },
+                          "value": "Department"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 15,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 15,
+                            "column": 15
+                          },
+                          "value": "Division/Ward"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 16,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 16,
+                            "column": 15
+                          },
+                          "value": "Street List"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 17,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 17,
+                            "column": 15
+                          },
+                          "value": "Fine Category"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 18,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 18,
+                            "column": 15
+                          },
+                          "value": "User Role"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 19,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 19,
+                            "column": 15
+                          },
+                          "value": "User Management"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 20,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 20,
+                            "column": 15
+                          },
+                          "value": "Time Config"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 21,
+                  "column": 9
+                },
+                "keyword": "When ",
+                "text": "I click on \"Welcome S. Mohana\" message"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 22,
+                  "column": 9
+                },
+                "keyword": "Then ",
+                "text": "I should see dropdown menu with below options:",
+                "argument": {
+                  "type": "DataTable",
+                  "location": {
+                    "line": 23,
+                    "column": 13
+                  },
+                  "rows": [
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 23,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 23,
+                            "column": 15
+                          },
+                          "value": "S. MOHANA"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 24,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 24,
+                            "column": 15
+                          },
+                          "value": "mohanso@avadicorp.com"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 25,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 25,
+                            "column": 15
+                          },
+                          "value": "Change password"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 26,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 26,
+                            "column": 15
+                          },
+                          "value": "Logout"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 27,
+                  "column": 9
+                },
+                "keyword": "When ",
+                "text": "I click on \"Welcome S. Mohana\" message again"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 28,
+                  "column": 9
+                },
+                "keyword": "Then ",
+                "text": "I should see dropdown menu is closed"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 29,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see \"Smart Survey\" title"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 30,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see the following list of cards with fine amount and report links:",
+                "argument": {
+                  "type": "DataTable",
+                  "location": {
+                    "line": 31,
+                    "column": 13
+                  },
+                  "rows": [
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 31,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 31,
+                            "column": 15
+                          },
+                          "value": "Today Fine Amount"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 31,
+                            "column": 37
+                          },
+                          "value": "0.00"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 31,
+                            "column": 57
+                          },
+                          "value": "View Report"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 32,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 32,
+                            "column": 15
+                          },
+                          "value": "Weekly Fine Amount"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 32,
+                            "column": 37
+                          },
+                          "value": "0.00"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 32,
+                            "column": 57
+                          },
+                          "value": "View Report"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 33,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 33,
+                            "column": 15
+                          },
+                          "value": "Monthly Fine Amount"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 33,
+                            "column": 37
+                          },
+                          "value": "32,68,353.00"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 33,
+                            "column": 57
+                          },
+                          "value": "View Report"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 34,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 34,
+                            "column": 15
+                          },
+                          "value": "Yearly Fine Amount"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 34,
+                            "column": 37
+                          },
+                          "value": "4,72,22,53,416.00"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 34,
+                            "column": 57
+                          },
+                          "value": "View Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 35,
+                  "column": 9
+                },
+                "keyword": "And ",
+                "text": "I should see the the following list of users with fine amount:",
+                "argument": {
+                  "type": "DataTable",
+                  "location": {
+                    "line": 36,
+                    "column": 13
+                  },
+                  "rows": [
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 36,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 36,
+                            "column": 15
+                          },
+                          "value": "S"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 36,
+                            "column": 19
+                          },
+                          "value": "S. MOHANA"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 36,
+                            "column": 34
+                          },
+                          "value": "Sanitary Officer"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 36,
+                            "column": 56
+                          },
+                          "value": "4708421002"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 37,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 37,
+                            "column": 15
+                          },
+                          "value": "A"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 37,
+                            "column": 19
+                          },
+                          "value": "ABDUL JAFFAR"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 37,
+                            "column": 34
+                          },
+                          "value": "Sanitary Inspector"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 37,
+                            "column": 56
+                          },
+                          "value": "8532"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 38,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 38,
+                            "column": 15
+                          },
+                          "value": "A"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 38,
+                            "column": 19
+                          },
+                          "value": "A.NAGARAJ"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 38,
+                            "column": 34
+                          },
+                          "value": "Sanitary Inspector"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 38,
+                            "column": 56
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 39,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 39,
+                            "column": 15
+                          },
+                          "value": "R"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 39,
+                            "column": 19
+                          },
+                          "value": "RAVICHANDRAN"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 39,
+                            "column": 34
+                          },
+                          "value": "Sanitary Inspector"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 39,
+                            "column": 56
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 40,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 40,
+                            "column": 15
+                          },
+                          "value": "G"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 40,
+                            "column": 19
+                          },
+                          "value": "G.PRAKASH"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 40,
+                            "column": 34
+                          },
+                          "value": "Sanitary Inspector"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 40,
+                            "column": 56
+                          },
+                          "value": "10000"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 41,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 41,
+                            "column": 15
+                          },
+                          "value": "S"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 41,
+                            "column": 19
+                          },
+                          "value": "S.PARAKASH"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 41,
+                            "column": 34
+                          },
+                          "value": "Sanitary Inspector"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 41,
+                            "column": 56
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 42,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 42,
+                            "column": 15
+                          },
+                          "value": "S"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 42,
+                            "column": 19
+                          },
+                          "value": "S.SIVAKUMAR"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 42,
+                            "column": 34
+                          },
+                          "value": "Sanitary Inspector"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 42,
+                            "column": 56
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 43,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 43,
+                            "column": 15
+                          },
+                          "value": "S"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 43,
+                            "column": 19
+                          },
+                          "value": "SIVAKUMAR"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 43,
+                            "column": 34
+                          },
+                          "value": "Sanitary Supervisor"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 43,
+                            "column": 56
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRow",
+                      "location": {
+                        "line": 44,
+                        "column": 13
+                      },
+                      "cells": [
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 44,
+                            "column": 15
+                          },
+                          "value": "P"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 44,
+                            "column": 19
+                          },
+                          "value": "POUL"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 44,
+                            "column": 34
+                          },
+                          "value": "Sanitary Supervisor"
+                        },
+                        {
+                          "type": "TableCell",
+                          "location": {
+                            "line": 44,
+                            "column": 56
+                          },
+                          "value": "0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 45,
+                  "column": 9
+                },
+                "keyword": "When ",
+                "text": "I click on \"Today\" link"
+              }
+            ]
+          }
+        ]
+      },
+      "comments": [],
+      "uri": "features\\dashboard.feature"
+    },
+    {
+      "type": "GherkinDocument",
+      "feature": {
+        "type": "Feature",
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Launch Google Application",
+        "children": [
+          {
+            "type": "Scenario",
+            "tags": [],
+            "location": {
+              "line": 3,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using valid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 4,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 5,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 6,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 7,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 8,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 9,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the Dashboard icon"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 11,
+                  "column": 5
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 12,
+              "column": 5
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 13,
+                  "column": 7
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 14,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 15,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 16,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"abcdef\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 17,
+                  "column": 7
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 18,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 20,
+                  "column": 5
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 21,
+              "column": 5
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 22,
+                  "column": 7
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 23,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 24,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 25,
+                  "column": 7
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 26,
+                  "column": 7
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 27,
+                  "column": 7
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          }
+        ]
+      },
+      "comments": [],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "type": "GherkinDocument",
+      "feature": {
+        "type": "Feature",
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Login Fine Application",
+        "children": [
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 2,
+                  "column": 3
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 3,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using valid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 4,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 5,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 6,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 7,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 8,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 10,
+                  "column": 3
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 11,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 12,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 13,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 14,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 15,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"abcdef\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 16,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 17,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          },
+          {
+            "type": "Scenario",
+            "tags": [
+              {
+                "type": "Tag",
+                "location": {
+                  "line": 19,
+                  "column": 3
+                },
+                "name": "@st"
+              }
+            ],
+            "location": {
+              "line": 20,
+              "column": 3
+            },
+            "keyword": "Scenario",
+            "name": "Login fine applicaton using invalid user credentials",
+            "steps": [
+              {
+                "type": "Step",
+                "location": {
+                  "line": 21,
+                  "column": 5
+                },
+                "keyword": "Given ",
+                "text": "I launch corparation fine Applciation"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 22,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see the login page"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 23,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 24,
+                  "column": 5
+                },
+                "keyword": "And ",
+                "text": "I enter \"123456\" in the \"Password\" field"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 25,
+                  "column": 5
+                },
+                "keyword": "When ",
+                "text": "I click on \"Sign in\" button"
+              },
+              {
+                "type": "Step",
+                "location": {
+                  "line": 26,
+                  "column": 5
+                },
+                "keyword": "Then ",
+                "text": "I should see \"These credentials do not match our records.\" message"
+              }
+            ]
+          }
+        ]
+      },
+      "comments": [],
+      "uri": "features\\login.feature"
+    }
+  ],
+  "pickles": [
+    {
+      "tags": [
+        {
+          "name": "@dashboard",
+          "location": {
+            "line": 3,
+            "column": 5
+          }
+        }
+      ],
+      "name": "Display dashboard for successful login",
+      "language": "en",
+      "locations": [
+        {
+          "line": 4,
+          "column": 5
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 5,
+              "column": 15
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 6,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 7,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 8,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 9,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I should see the \"Welcome S. Mohana\" as message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 10,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the following menu option on the left had side:",
+          "arguments": [
+            {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 12,
+                        "column": 15
+                      },
+                      "value": "Dashboard"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 13,
+                        "column": 15
+                      },
+                      "value": "Fine Report"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 14,
+                        "column": 15
+                      },
+                      "value": "Department"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 15,
+                        "column": 15
+                      },
+                      "value": "Division/Ward"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 16,
+                        "column": 15
+                      },
+                      "value": "Street List"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 17,
+                        "column": 15
+                      },
+                      "value": "Fine Category"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 18,
+                        "column": 15
+                      },
+                      "value": "User Role"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 19,
+                        "column": 15
+                      },
+                      "value": "User Management"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 20,
+                        "column": 15
+                      },
+                      "value": "Time Config"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "line": 11,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Welcome S. Mohana\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 21,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I should see dropdown menu with below options:",
+          "arguments": [
+            {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 23,
+                        "column": 15
+                      },
+                      "value": "S. MOHANA"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 24,
+                        "column": 15
+                      },
+                      "value": "mohanso@avadicorp.com"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 25,
+                        "column": 15
+                      },
+                      "value": "Change password"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 26,
+                        "column": 15
+                      },
+                      "value": "Logout"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "line": 22,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Welcome S. Mohana\" message again",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 27,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I should see dropdown menu is closed",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 28,
+              "column": 14
+            }
+          ]
+        },
+        {
+          "text": "I should see \"Smart Survey\" title",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 29,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the following list of cards with fine amount and report links:",
+          "arguments": [
+            {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 31,
+                        "column": 15
+                      },
+                      "value": "Today Fine Amount"
+                    },
+                    {
+                      "location": {
+                        "line": 31,
+                        "column": 37
+                      },
+                      "value": "0.00"
+                    },
+                    {
+                      "location": {
+                        "line": 31,
+                        "column": 57
+                      },
+                      "value": "View Report"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 32,
+                        "column": 15
+                      },
+                      "value": "Weekly Fine Amount"
+                    },
+                    {
+                      "location": {
+                        "line": 32,
+                        "column": 37
+                      },
+                      "value": "0.00"
+                    },
+                    {
+                      "location": {
+                        "line": 32,
+                        "column": 57
+                      },
+                      "value": "View Report"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 33,
+                        "column": 15
+                      },
+                      "value": "Monthly Fine Amount"
+                    },
+                    {
+                      "location": {
+                        "line": 33,
+                        "column": 37
+                      },
+                      "value": "32,68,353.00"
+                    },
+                    {
+                      "location": {
+                        "line": 33,
+                        "column": 57
+                      },
+                      "value": "View Report"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 34,
+                        "column": 15
+                      },
+                      "value": "Yearly Fine Amount"
+                    },
+                    {
+                      "location": {
+                        "line": 34,
+                        "column": 37
+                      },
+                      "value": "4,72,22,53,416.00"
+                    },
+                    {
+                      "location": {
+                        "line": 34,
+                        "column": 57
+                      },
+                      "value": "View Report"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "line": 30,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the the following list of users with fine amount:",
+          "arguments": [
+            {
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 36,
+                        "column": 15
+                      },
+                      "value": "S"
+                    },
+                    {
+                      "location": {
+                        "line": 36,
+                        "column": 19
+                      },
+                      "value": "S. MOHANA"
+                    },
+                    {
+                      "location": {
+                        "line": 36,
+                        "column": 34
+                      },
+                      "value": "Sanitary Officer"
+                    },
+                    {
+                      "location": {
+                        "line": 36,
+                        "column": 56
+                      },
+                      "value": "4708421002"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 37,
+                        "column": 15
+                      },
+                      "value": "A"
+                    },
+                    {
+                      "location": {
+                        "line": 37,
+                        "column": 19
+                      },
+                      "value": "ABDUL JAFFAR"
+                    },
+                    {
+                      "location": {
+                        "line": 37,
+                        "column": 34
+                      },
+                      "value": "Sanitary Inspector"
+                    },
+                    {
+                      "location": {
+                        "line": 37,
+                        "column": 56
+                      },
+                      "value": "8532"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 38,
+                        "column": 15
+                      },
+                      "value": "A"
+                    },
+                    {
+                      "location": {
+                        "line": 38,
+                        "column": 19
+                      },
+                      "value": "A.NAGARAJ"
+                    },
+                    {
+                      "location": {
+                        "line": 38,
+                        "column": 34
+                      },
+                      "value": "Sanitary Inspector"
+                    },
+                    {
+                      "location": {
+                        "line": 38,
+                        "column": 56
+                      },
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 39,
+                        "column": 15
+                      },
+                      "value": "R"
+                    },
+                    {
+                      "location": {
+                        "line": 39,
+                        "column": 19
+                      },
+                      "value": "RAVICHANDRAN"
+                    },
+                    {
+                      "location": {
+                        "line": 39,
+                        "column": 34
+                      },
+                      "value": "Sanitary Inspector"
+                    },
+                    {
+                      "location": {
+                        "line": 39,
+                        "column": 56
+                      },
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 40,
+                        "column": 15
+                      },
+                      "value": "G"
+                    },
+                    {
+                      "location": {
+                        "line": 40,
+                        "column": 19
+                      },
+                      "value": "G.PRAKASH"
+                    },
+                    {
+                      "location": {
+                        "line": 40,
+                        "column": 34
+                      },
+                      "value": "Sanitary Inspector"
+                    },
+                    {
+                      "location": {
+                        "line": 40,
+                        "column": 56
+                      },
+                      "value": "10000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 41,
+                        "column": 15
+                      },
+                      "value": "S"
+                    },
+                    {
+                      "location": {
+                        "line": 41,
+                        "column": 19
+                      },
+                      "value": "S.PARAKASH"
+                    },
+                    {
+                      "location": {
+                        "line": 41,
+                        "column": 34
+                      },
+                      "value": "Sanitary Inspector"
+                    },
+                    {
+                      "location": {
+                        "line": 41,
+                        "column": 56
+                      },
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 42,
+                        "column": 15
+                      },
+                      "value": "S"
+                    },
+                    {
+                      "location": {
+                        "line": 42,
+                        "column": 19
+                      },
+                      "value": "S.SIVAKUMAR"
+                    },
+                    {
+                      "location": {
+                        "line": 42,
+                        "column": 34
+                      },
+                      "value": "Sanitary Inspector"
+                    },
+                    {
+                      "location": {
+                        "line": 42,
+                        "column": 56
+                      },
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 43,
+                        "column": 15
+                      },
+                      "value": "S"
+                    },
+                    {
+                      "location": {
+                        "line": 43,
+                        "column": 19
+                      },
+                      "value": "SIVAKUMAR"
+                    },
+                    {
+                      "location": {
+                        "line": 43,
+                        "column": 34
+                      },
+                      "value": "Sanitary Supervisor"
+                    },
+                    {
+                      "location": {
+                        "line": 43,
+                        "column": 56
+                      },
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "location": {
+                        "line": 44,
+                        "column": 15
+                      },
+                      "value": "P"
+                    },
+                    {
+                      "location": {
+                        "line": 44,
+                        "column": 19
+                      },
+                      "value": "POUL"
+                    },
+                    {
+                      "location": {
+                        "line": 44,
+                        "column": 34
+                      },
+                      "value": "Sanitary Supervisor"
+                    },
+                    {
+                      "location": {
+                        "line": 44,
+                        "column": 56
+                      },
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "line": 35,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Today\" link",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 45,
+              "column": 14
+            }
+          ]
+        }
+      ],
+      "uri": "features\\dashboard.feature"
+    },
+    {
+      "tags": [],
+      "name": "Login fine applicaton using valid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 4,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 5,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 6,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 7,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 8,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see the Dashboard icon",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 9,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 11,
+            "column": 5
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 12,
+          "column": 5
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 13,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 14,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 15,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I enter \"abcdef\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 16,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 17,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 18,
+              "column": 12
+            }
+          ]
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 20,
+            "column": 5
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 21,
+          "column": 5
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 22,
+              "column": 13
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 23,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 24,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 25,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 26,
+              "column": 12
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 27,
+              "column": 12
+            }
+          ]
+        }
+      ],
+      "uri": "features\\lauch.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 2,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using valid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 4,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 5,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 6,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 7,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 8,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\login.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 10,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 11,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 12,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 13,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 14,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"abcdef\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 15,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 16,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 17,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\login.feature"
+    },
+    {
+      "tags": [
+        {
+          "name": "@st",
+          "location": {
+            "line": 19,
+            "column": 3
+          }
+        }
+      ],
+      "name": "Login fine applicaton using invalid user credentials",
+      "language": "en",
+      "locations": [
+        {
+          "line": 20,
+          "column": 3
+        }
+      ],
+      "steps": [
+        {
+          "text": "I launch corparation fine Applciation",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 21,
+              "column": 11
+            }
+          ]
+        },
+        {
+          "text": "I should see the login page",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 22,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I enter \"test@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 23,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 24,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "text": "I click on \"Sign in\" button",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 25,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "text": "I should see \"These credentials do not match our records.\" message",
+          "arguments": [],
+          "locations": [
+            {
+              "line": 26,
+              "column": 10
+            }
+          ]
+        }
+      ],
+      "uri": "features\\login.feature"
+    }
+  ],
+  "testCaseAttempts": [
+    {
+      "testCase": {
+        "attemptNumber": 1,
+        "name": "Display dashboard for successful login",
+        "result": {
+          "duration": 67123000000,
+          "status": "passed"
+        },
+        "sourceLocation": {
+          "uri": "features\\dashboard.feature",
+          "line": 4
+        }
+      },
+      "testSteps": [
+        {
+          "attachments": [],
+          "result": {
+            "duration": 11270000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\hooks.js",
+            "line": 22
+          },
+          "keyword": "Before"
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 28449000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 6
+          },
+          "keyword": "Given ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 5
+          },
+          "text": "I launch corparation fine Applciation",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 14000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 18
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 6
+          },
+          "text": "I should see the login page",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 183000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\input_field_steps.js",
+            "line": 3
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 7
+          },
+          "text": "I enter \"mohanso@avadicorp.com\" in the \"Email Address\" field",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 94000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\input_field_steps.js",
+            "line": 3
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 8
+          },
+          "text": "I enter \"123456\" in the \"Password\" field",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 12015000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\button_steps.js",
+            "line": 3
+          },
+          "keyword": "When ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 9
+          },
+          "text": "I click on \"Sign in\" button",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 1330000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 31
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 10
+          },
+          "text": "I should see the \"Welcome S. Mohana\" as message",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 71000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\launch_steps.js",
+            "line": 39
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 11
+          },
+          "text": "I should see the following menu option on the left had side:",
+          "arguments": [
+            {
+              "rows": [
+                [
+                  "Dashboard"
+                ],
+                [
+                  "Fine Report"
+                ],
+                [
+                  "Department"
+                ],
+                [
+                  "Division/Ward"
+                ],
+                [
+                  "Street List"
+                ],
+                [
+                  "Fine Category"
+                ],
+                [
+                  "User Role"
+                ],
+                [
+                  "User Management"
+                ],
+                [
+                  "Time Config"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 4173000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\button_steps.js",
+            "line": 7
+          },
+          "keyword": "When ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 21
+          },
+          "text": "I click on \"Welcome S. Mohana\" message",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 20000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\dropdown_steps.js",
+            "line": 3
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 22
+          },
+          "text": "I should see dropdown menu with below options:",
+          "arguments": [
+            {
+              "rows": [
+                [
+                  "S. MOHANA"
+                ],
+                [
+                  "mohanso@avadicorp.com"
+                ],
+                [
+                  "Change password"
+                ],
+                [
+                  "Logout"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 4097000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\button_steps.js",
+            "line": 11
+          },
+          "keyword": "When ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 27
+          },
+          "text": "I click on \"Welcome S. Mohana\" message again",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 10000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\dropdown_steps.js",
+            "line": 8
+          },
+          "keyword": "Then ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 28
+          },
+          "text": "I should see dropdown menu is closed",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 11000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\title_steps.js",
+            "line": 3
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 29
+          },
+          "text": "I should see \"Smart Survey\" title",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 18000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\card_steps.js",
+            "line": 3
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 30
+          },
+          "text": "I should see the following list of cards with fine amount and report links:",
+          "arguments": [
+            {
+              "rows": [
+                [
+                  "Today Fine Amount",
+                  "0.00",
+                  "View Report"
+                ],
+                [
+                  "Weekly Fine Amount",
+                  "0.00",
+                  "View Report"
+                ],
+                [
+                  "Monthly Fine Amount",
+                  "32,68,353.00",
+                  "View Report"
+                ],
+                [
+                  "Yearly Fine Amount",
+                  "4,72,22,53,416.00",
+                  "View Report"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 35000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\card_steps.js",
+            "line": 8
+          },
+          "keyword": "And ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 35
+          },
+          "text": "I should see the the following list of users with fine amount:",
+          "arguments": [
+            {
+              "rows": [
+                [
+                  "S",
+                  "S. MOHANA",
+                  "Sanitary Officer",
+                  "4708421002"
+                ],
+                [
+                  "A",
+                  "ABDUL JAFFAR",
+                  "Sanitary Inspector",
+                  "8532"
+                ],
+                [
+                  "A",
+                  "A.NAGARAJ",
+                  "Sanitary Inspector",
+                  "0"
+                ],
+                [
+                  "R",
+                  "RAVICHANDRAN",
+                  "Sanitary Inspector",
+                  "0"
+                ],
+                [
+                  "G",
+                  "G.PRAKASH",
+                  "Sanitary Inspector",
+                  "10000"
+                ],
+                [
+                  "S",
+                  "S.PARAKASH",
+                  "Sanitary Inspector",
+                  "0"
+                ],
+                [
+                  "S",
+                  "S.SIVAKUMAR",
+                  "Sanitary Inspector",
+                  "0"
+                ],
+                [
+                  "S",
+                  "SIVAKUMAR",
+                  "Sanitary Supervisor",
+                  "0"
+                ],
+                [
+                  "P",
+                  "POUL",
+                  "Sanitary Supervisor",
+                  "0"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 4124000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\button_steps.js",
+            "line": 15
+          },
+          "keyword": "When ",
+          "sourceLocation": {
+            "uri": "features\\dashboard.feature",
+            "line": 45
+          },
+          "text": "I click on \"Today\" link",
+          "arguments": []
+        },
+        {
+          "attachments": [],
+          "result": {
+            "duration": 1209000000,
+            "status": "passed"
+          },
+          "actionLocation": {
+            "uri": "step_definitions\\hooks.js",
+            "line": 63
+          },
+          "keyword": "After"
+        }
+      ]
+    }
+  ]
+}

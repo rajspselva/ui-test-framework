@@ -153,6 +153,11 @@ async function findElementsByCssSelector(page, cssSelecctor) {
     return await page.$$(`.${cssSelecctor}`)
 }
 
+async function findElementById(page, elementId){
+    return await page.$(`#${elementId}`)
+
+}
+
 async function findElementsByCssSelectorAndText(page, cssSelecctor, fieldText) {
     const matchingElements = await page.$$(`.${cssSelecctor}`)
 
@@ -209,6 +214,7 @@ module.exports = {
     findAllSiblingElementValuesByType,
     findAllSibilingElementValuesByCssSelector,
     findAllElementsValues,
+    findElementById,
     findInputFieldByPlaceHolderValue,
     findFieldById,
     findTableValues,
