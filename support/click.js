@@ -34,7 +34,20 @@ function delay(time) {
   })
 }
 
+async function clickByCssSelectorAndText(page, linkText, cssSelector) {
+  const element = await find.findElementsByCssSelectorAndText(page, cssSelector, linkText)
+
+  await Promise.all([
+    element.click(),
+    page.waitForNavigation({
+      waitUntil: "networkidle0",
+      timeout: 60000
+    })
+  ])
+}
+
 module.exports = {
   clickByText,
-  clickByAnchortext
+  clickByAnchortext,
+  clickByCssSelectorAndText
 }
