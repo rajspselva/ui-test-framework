@@ -34,16 +34,23 @@ function delay(time) {
   })
 }
 
-async function clickByCssSelectorAndText(page, linkText, cssSelector) {
-  const element = await find.findElementsByCssSelectorAndText(page, cssSelector, linkText)
+async function clickByCssSelectorAndText(page, linkText, cssSelector, waitForNavigation) {
+    const element = await find.findElementsByCssSelectorAndText(page, cssSelector, linkText)
 
-  await Promise.all([
-    element.click(),
-    page.waitForNavigation({
-      waitUntil: "networkidle0",
-      timeout: 60000
-    })
-  ])
+    if (waitForNavigation) {
+      await Promise.all([
+        element.click(),
+        page.waitForNavigation({
+          waitUntil: "networkidle0",
+          timeout: 60000
+        })
+      ])
+    } else {
+      await element.click()
+    }
+    
+    await delay(4000);
+ 
 }
 
 module.exports = {

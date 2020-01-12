@@ -16,3 +16,10 @@
      console.log("drop down menu closed")
    }
  });
+
+  Then('I should see the following menu Options:', async function (dataTable) {
+     let values = await dropdown.findUserMenuOptions(scope.page, 'nav-item.submenu ul')
+      return assert.deepEqual(values, dataTable.rawTable);
+    
+  });
+
