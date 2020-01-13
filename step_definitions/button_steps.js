@@ -16,5 +16,6 @@
     return await click.clickByAnchortext(scope.page, linkText, false)
 })
  When('I click on page no {string} link', async function (linkText) {
-     return await click.clickByCssSelectorAndText(scope.page, linkText, 'pagination .page-item a')
+     return await click.clickByCssSelectorAndText(scope.page, linkText, 'pagination .page-item a', true)
  })
+
